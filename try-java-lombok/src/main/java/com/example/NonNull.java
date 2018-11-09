@@ -4,6 +4,8 @@ public class NonNull {
     private int id;
     @lombok.NonNull
     private String name;
-    private int price;
-    private String publishDate;
+
+    public void setNonNull(@lombok.NonNull Book book) {
+        this.name = book.getName();
+    }
 }
